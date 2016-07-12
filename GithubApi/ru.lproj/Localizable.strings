@@ -1,0 +1,28 @@
+/* 
+  Localizable.strings
+  GithubApi
+
+  Created by Maks Sergeychuk on 7/10/16.
+  Copyright © 2016 remiy.com. All rights reserved.
+*/
+
+
+
+"userFollowers" = "Отслеживают";
+"userFollowing" = "Следит";
+"userGists" = "Сущностей";
+"userRepositories" = "Репозиториев";
+"alertNeedAuth" = "Необходимо авторизоватся на Github";
+"alertAuthCaption" = "Тестовый акаунт \nЛогин: zzxxx \n Пароль: zzxxx11";
+"alertAuthOK" = "Хорошо";
+"userRepoListTableTitle" = "Список репозиториев:";
+"sharingNameTitle" = " на Github";
+"Open in safari" = "Открыть в safari";
+"Save" = "Сохранить";
+"Share" = "Поделиться";
+"Not reachable" = "Нет связи с интернетом";
+"Connection problems" = "Проблемы с интернетом";
+"Reachable" = "Соединение восстановлено";
+"Bad Request - Code: 404 : Not Found" = "Ничего не найдено";
+"404" = "Ничего не найдено";
+"Error" = "Ошибка";

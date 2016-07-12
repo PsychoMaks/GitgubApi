@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="10174" systemVersion="15F34" minimumToolsVersion="Automatic">
+    <entity name="Repo" representedClassName=".Repo" syncable="YES">
+        <attribute name="forksCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="language" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="starsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="owner" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="repositories" inverseEntity="User" syncable="YES"/>
+    </entity>
+    <entity name="Settings" representedClassName=".Settings" syncable="YES">
+        <attribute name="authenticated" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="firstLaunch" optional="YES" attributeType="Boolean" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="useAutoAuth" optional="YES" attributeType="Boolean" syncable="YES"/>
+    </entity>
+    <entity name="User" representedClassName=".User" syncable="YES">
+        <attribute name="avatarURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="company" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="email" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="followersCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="followingCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="gistsCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="iD" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="login" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="reposCount" optional="YES" attributeType="Integer 32" defaultValueString="0" syncable="YES"/>
+        <attribute name="reposURL" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="url" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="repositories" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Repo" inverseName="owner" inverseEntity="Repo" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Repo" positionX="-164" positionY="-81" width="128" height="148"/>
+        <element name="Settings" positionX="-252" positionY="27" width="128" height="105"/>
+        <element name="User" positionX="-344" positionY="-79" width="128" height="240"/>
+    </elements>
+</model>
